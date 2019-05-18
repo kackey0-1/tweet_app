@@ -6,9 +6,9 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+ `Ruby  2.5.0`
 * System dependencies
-
+ `Rails  5.0.3`
 * Configuration
 
 * Database creation
@@ -21,7 +21,33 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Gitコマンドの基本
+https://qiita.com/_ha1f/items/2dca1047c57d4f0bd465
+
+  #git init
+  データベース用のフォルダとして.gitという隠しフォルダ
+
+  # git add
+  ファイル/ディレクトリを、圧縮・ハッシュで命名して.git/objectsにコピーします。同時に、ステージングにも反映します
+  -u: 削除されたファイルと、修正されたファイル
+  .: 新しく作られたファイルと、修正されたファイル
+  -A: 新しく作られたファイルと、削除されたファイルと、修正されたファイル
+
+  # git commit
+  ステージングの状態を、コミットオブジェクトに変換して、コミットログとして登録します。
+
+  # git branch
+  git branch             # ブランチ一覧を表示
+  git branch ブランチ名    # ブランチを作成
+  git branch -D ブランチ名 # ブランチを削除
+
+  # git checkout
+  ブランチを切り替えます。HEADの内容を、そのブランチのHEADで置き換え、ワークツリーの内容にも反映します。
+  git checkout -b ブランチ名
+
+  # git merge
+
+
 
 ###########
 243  touch test.rb
